@@ -2,7 +2,7 @@
 :root {
   --primary: #ea625c;
   --text-color: #333;
-
+  --primary-dark: #c9514c;
 }
 
 
@@ -71,6 +71,29 @@ img {
   margin-right: auto;
 }
 
+
+/* BUTTON */
+.button {
+  display: inline-block;
+  background-color: var(--primary);
+  padding: 12px 38px;
+  border: 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--primary-dark);
+}
+
+.button:active {
+  opacity: 0.6;
+}
 
 /* MAIN-CONTENT */
 .main-content {
@@ -150,76 +173,54 @@ img {
   border: 0;
   border-bottom: 1px solid #333;
 }
-
-
-
-
-
 /* HERO */
-.site-hero {
-  margin: 0;
-  margin-top: 80px;
-  padding: 0;
-  background-image: url(../img/watches.png);
-  background-repeat: no-repeat;
+.hero {
+  padding-bottom: 185px;
+  padding-top: 140px;
+  border-bottom: 2px solid #ddd;
+  background-image: url(../img/watches.jpg);
+  background-repeat:no-repeat;
   background-size: 587px 565px;
-  background-position: right ;
-  border-bottom: 2px solid #DDDDDD;
+  background-position: left calc(50% + 550px) bottom;
 }
 
-.hero-content {
-  display: flex;
+
+/* LEAD-CTA */
+.lead-cta {
+  width: 100%;
+  max-width: 490px;
 }
 
-.hero-content-heading {
-  margin: 0;
-  margin-top: 91px;
+.lead-cta-heading {
+  margin-top: 0;
   margin-bottom: 30px;
-  padding: 0;
-  font-style: normal;
-  font-weight: 700;
   font-size: 50px;
-  line-height: 120%;
-  color: #000000;
+  line-height: 1.2;
+  color: #000;
 }
 
-.hero-content-text {
-  width: 450px;
-  margin: 0;
-  margin-bottom: 42px;
-  padding: 0;
-  padding-left: 40px;
-  border-left: 3px solid #888888;;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  color: #777777;
+.lead-cta-text {
+  margin-top: 0;
+  margin-bottom: 30px;
+  border-left: 3px solid #888;
+  padding-left: 37px;
+  color: #777;
 }
 
-.button {
-  padding: 12px 39px;
-  text-transform: uppercase;
-  border: 0;
-  background-color: #EA625C;
-  color: #fff;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 150%;
-  margin-bottom: 185px;
 
-}
+/* RETINA BG */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../img/watches@2x.jpg");
+  }
 
-.hero-content-img {
-
-}
-
-/* MAIN-CONTENT */
-.main-content {
-  flex-grow: 1;
-}
-
+  
 .article-card {
   display: flex;
   padding-top: 70px;
