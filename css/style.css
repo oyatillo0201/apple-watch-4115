@@ -25,8 +25,6 @@
       url("../fonts/roboto-v30-latin-700.woff") format("woff");
 }
 
-
-
 /* GLOBAL */
 html {
   height: 100%;
@@ -56,6 +54,11 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+*:focus {
+  outline: 2px dashed var(--primary);
+  outline-offset: 2px;
 }
 
 /* CONTAINER */
