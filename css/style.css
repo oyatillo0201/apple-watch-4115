@@ -304,6 +304,31 @@ img {
 }
 
 
+/* RUNNERS */
+.runners {
+  padding-top: 240px;
+  padding-bottom: 240px;
+  background-image: url(../img/runners-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.runners-lead-cta {
+  margin-left: auto;
+}
+
+.runners-lead-cta-heading {
+  color: #fff;
+}
+
+.runner-lead-cta-text {
+  color: #fff;
+  border-color: #fff;
+}
+
+
 
 /* RETINA BG */
 @media
@@ -317,94 +342,7 @@ only screen and (                min-resolution: 2dppx) {
     background-image: url("../img/watches@2x.jpg");
   }
 
-
-.article-card {
-  display: flex;
-  padding-top: 70px;
-  padding-bottom: 70px;
-}
-
-
-/* ADDITIONAL-FUNKTION */
-.additional-funktion {
-  display: flex;
-  padding-top: 70px;
-  padding-bottom: 70px;
-
-}
-
-.descriptipon-funktion {
-  display: flex;
-}
-
-.description-funktion-wrapper {
-  width: 490px;
-  margin-right: 110px;
-}
-
-.description-funktion-heading {
-  padding: 0;
-  margin: 0;
-  margin-top: 177px;
-  margin-bottom: 30px;
-
-}
-
-.description-funktion-text {
-  width: 450px;
-  margin: 0;
-  margin-bottom: 30px;
-  padding: 0;
-  padding-left: 40px;
-  border-left: 3px solid #888888;
-}
-
-
-.button-red {
-  padding: 12px 90px;
-}
-
-/* featur */
-.featur {
-  background-image: url(../img/runners-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: ;
-}
-
-.footer {
-  display: flex;
-  justify-content: end;
-}
-
-.feature-wrapper {
-
-  width: 490px;
-}
-
-.feature-wrapper-heading {
-  margin: 0;
-  margin-top: 240px;
-  margin-bottom: 30px;
-  padding: 0;
-  font-family: "Roboto","Arial", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 120%;
-  color: #FFFFFF;
-}
-
-.feature-wrapper-text {
-  margin: 0;
-  margin-bottom: 30px;
-  padding: 0;
-  padding-left: 40px;
-  border-left:3px solid #fff;
-  font-family: "Roboto","Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  color: #FFFFFF;
+  .runners {
+    background-image: url(../img/runners-bg@2x.jpg);
+  }
 }
