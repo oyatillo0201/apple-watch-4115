@@ -74,6 +74,8 @@ img {
 /* BUTTON */
 .button {
   display: inline-block;
+  min-width: 260px;
+  text-align: center;
   background-color: var(--primary);
   padding: 12px 38px;
   border: 0;
@@ -279,6 +281,27 @@ img {
   box-shadow: 16px 0 0 0 #ddd, 32px 0 0 0 #ddd;
 }
 
+
+/* PROMO */
+.promo {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.promo-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo-lead-cta-heading {
+  margin-top: 107px;
+}
+
+.promo-img {
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+}
 
 
 
